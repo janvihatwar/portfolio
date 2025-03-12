@@ -3,21 +3,6 @@ import { motion } from "framer-motion"
 import { FaReact, FaNodeJs, FaJava, FaPython, FaHtml5, FaCss3Alt } from "react-icons/fa"
 import { SiNextdotjs, SiCplusplus, SiC, SiTailwindcss, SiTypescript } from "react-icons/si"
 
-
-`
-@keyframes border-animation {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-`
-
 export default function Home() {
 
     const technologies = [
