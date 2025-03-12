@@ -32,7 +32,7 @@ export default function Home() {
             {/* Name & Description */}
             <div className="space-y-6">
               <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
-                <span className="text-[#1a1a1a] dark:text-white">Hi, I'm </span>
+                <span className="text-[#1a1a1a] dark:text-white">Hi, I&apos;m </span>
                 <span className="relative inline-block">
                   <span
                     className="bg-gradient-to-r from-[#1a1a1a] to-[#666666]

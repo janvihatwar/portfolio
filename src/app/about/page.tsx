@@ -53,8 +53,8 @@ export default function Home() {
             </h3>
             <div className="space-y-4 text-lg text-[#666666] dark:text-[#888888]">
               <p>
-                Hi, I'm Janvi Rajesh Hatwar, a frontend developer who loves building clean and user-friendly web applications. 
-                I mainly work with React.js, JavaScript, and modern web technologies, and I'm always eager to learn new tools 
+                Hi, I&apos;m Janvi Rajesh Hatwar, a frontend developer who loves building clean and user-friendly web applications. 
+                I mainly work with React.js, JavaScript, and modern web technologies, and I&apos;m always eager to learn new tools 
                 to improve my skills.
               </p>
               <p>

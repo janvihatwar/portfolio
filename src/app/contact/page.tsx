@@ -31,7 +31,7 @@ export default function Contact() {
             transition={{ delay: 0.3 }}
             className="text-3xl lg:text-4xl font-bold text-[#1a1a1a] dark:text-white mb-6"
           >
-            Let's Work Together
+            Let&apos;s Work Together
           </motion.h1>
         </div>
 
