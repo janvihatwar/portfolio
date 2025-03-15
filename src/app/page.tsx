@@ -19,19 +19,19 @@ export default function Home() {
       <motion.section
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
-        className="max-w-6xl mx-auto px-4 sm:px-6 lg:px-8 py-20 min-h-screen flex items-center"
+        className="max-w-6xl mx-auto px-3 sm:px-4 md:px-6 lg:px-8 py-12 sm:py-16 md:py-20 min-h-screen flex items-center"
       >
-        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+        <div className="w-full grid grid-cols-1 lg:grid-cols-2 gap-8 sm:gap-12 lg:gap-16 items-center">
           {/* Left Column */}
           <motion.div
             initial={{ opacity: 0, x: -20 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ delay: 0.2 }}
-            className="space-y-8"
+            className="space-y-6 sm:space-y-8"
           >
             {/* Name & Description */}
-            <div className="space-y-6">
-              <h1 className="text-3xl lg:text-5xl font-bold leading-tight">
+            <div className="space-y-4 sm:space-y-6">
+              <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
                 <span className="text-[#1a1a1a] dark:text-white">Hi, I&apos;m </span>
                 <span className="relative inline-block">
                   <span
@@ -42,7 +42,7 @@ export default function Home() {
                     Janvi
                   </span>
                   <motion.span
-                    className="absolute bottom-0 left-0 w-full h-[4px] 
+                    className="absolute bottom-0 left-0 w-full h-[2px] sm:h-[3px] md:h-[4px]
                               bg-[#1a1a1a] dark:bg-white rounded-full"
                     initial={{ scaleX: 0 }}
                     animate={{ scaleX: 1 }}
@@ -56,15 +56,15 @@ export default function Home() {
                 initial={{ opacity: 0, y: -20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.3 }}
-                className="flex items-center gap-3"
+                className="flex items-center gap-2 sm:gap-3"
               >
-                <span className="h-px w-8 bg-[#1a1a1a] dark:bg-white" />
-                <span className="text-sm font-medium text-[#666666] dark:text-[#888888] uppercase tracking-wider">
+                <span className="h-px w-4 sm:w-6 md:w-8 bg-[#1a1a1a] dark:bg-white" />
+                <span className="text-[10px] xs:text-xs sm:text-sm font-medium text-[#666666] dark:text-[#888888] uppercase tracking-wider">
                   Frontend Developer
                 </span>
               </motion.div>
 
-              <p className="text-lg text-[#666666] dark:text-[#888888] max-w-lg">
+              <p className="text-sm sm:text-base md:text-lg text-[#666666] dark:text-[#888888] max-w-lg">
                 I create user-friendly web applications with modern
                 technologies. Passionate about clean code and seamless user
                 experiences.
@@ -76,58 +76,43 @@ export default function Home() {
               initial={{ opacity: 0, y: 20 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ delay: 0.6 }}
-              className="flex flex-wrap gap-4"
+              className="flex flex-wrap gap-3 sm:gap-4"
             >
               <motion.div
                 whileHover={{ scale: 1.02 }}
                 className="group relative"
               >
-                <div className="flex space-x-4">
-  <Link
-    href="/contact"
-    className="relative inline-flex items-center gap-2 px-6 py-3 
-             bg-[#1a1a1a] dark:bg-white
-             text-white dark:text-[#1a1a1a]
-             rounded-lg group-hover:rounded-xl
-             transition-all duration-300"
-  >
-    Get in Touch
-    <BsArrowRight className="group-hover:translate-x-1 transition-transform" />
-  </Link>
+                <div className="flex space-x-3 sm:space-x-4">
+                  <Link
+                    href="/contact"
+                    className="relative inline-flex items-center gap-1.5 sm:gap-2 
+                             px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3
+                             bg-[#1a1a1a] dark:bg-white
+                             text-white dark:text-[#1a1a1a]
+                             text-xs sm:text-sm md:text-base
+                             rounded-md sm:rounded-lg group-hover:rounded-xl
+                             transition-all duration-300"
+                  >
+                    Get in Touch
+                    <BsArrowRight className="text-xs sm:text-sm md:text-base group-hover:translate-x-1 transition-transform" />
+                  </Link>
 
-  <Link
-    href="/Resume_JanviHatwar.pdf" // Replace this with your resume link
-    target="_blank"
-    rel="noopener noreferrer"
-    className="relative inline-flex items-center gap-2 px-6 py-3 
-             border border-[#1a1a1a] dark:border-white
-             text-[#1a1a1a] dark:text-white
-             rounded-lg group-hover:rounded-xl
-             transition-all duration-300"
-  >
-    Resume
-  </Link>
-</div>
-
+                  <Link
+                    href="/Resume_JanviHatwar.pdf"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="relative inline-flex items-center gap-1.5 sm:gap-2
+                             px-4 sm:px-5 md:px-6 py-2 sm:py-2.5 md:py-3
+                             border border-[#1a1a1a] dark:border-white
+                             text-[#1a1a1a] dark:text-white
+                             text-xs sm:text-sm md:text-base
+                             rounded-md sm:rounded-lg group-hover:rounded-xl
+                             transition-all duration-300"
+                  >
+                    Resume
+                  </Link>
+                </div>
               </motion.div>
-
-              {/* <motion.div
-                whileHover={{ scale: 1.02 }}
-                className="group relative"
-              >
-                <Link
-                  href="/projects"
-                  className="relative inline-flex items-center gap-2 px-6 py-3 
-                           bg-white dark:bg-[#1a1a1a]
-                           text-[#1a1a1a] dark:text-white
-                           border border-[#e5e7eb] dark:border-[#2e2e2e]
-                           rounded-lg group-hover:rounded-xl
-                           transition-all duration-300"
-                >
-                  View Projects
-                  <BsArrowRight className="group-hover:translate-x-1 transition-transform" />
-                </Link>
-              </motion.div> */}
             </motion.div>
           </motion.div>
 
@@ -138,9 +123,9 @@ export default function Home() {
             transition={{ delay: 0.4 }}
             className="relative"
           >
-            <div className="space-y-6 text-right">
+            <div className="space-y-4 sm:space-y-6 text-right">
               <motion.h2
-                className="text-4xl lg:text-7xl font-light flex flex-wrap justify-end gap-4 lg:gap-6"
+                className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-light flex flex-wrap justify-end gap-2 sm:gap-4 lg:gap-6"
                 initial={{ opacity: 0, y: 20 }}
                 animate={{ opacity: 1, y: 0 }}
                 transition={{ delay: 0.5 }}
@@ -151,7 +136,7 @@ export default function Home() {
                 >
                   Coding
                   <span
-                    className="absolute bottom-0 left-0 w-full h-[2px] 
+                    className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
                      bg-[#1a1a1a] dark:bg-white
                      transform origin-left scale-x-0 group-hover:scale-x-100
                      transition-transform duration-300"
@@ -168,7 +153,7 @@ export default function Home() {
                 >
                   Logic
                   <span
-                    className="absolute bottom-0 left-0 w-full h-[2px]
+                    className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
                      bg-[#1a1a1a] dark:bg-white
                      transform origin-left scale-x-0 group-hover:scale-x-100
                      transition-transform duration-300"
@@ -185,7 +170,7 @@ export default function Home() {
                 >
                   Creativity
                   <span
-                    className="absolute bottom-0 left-0 w-full h-[2px]
+                    className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
                      bg-[#1a1a1a] dark:bg-white
                      transform origin-left scale-x-0 group-hover:scale-x-100
                      transition-transform duration-300"

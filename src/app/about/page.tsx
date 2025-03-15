@@ -20,23 +20,23 @@ export default function Home() {
       ]
 
   return (
-    <main className="min-h-screen bg-[#fafafa] dark:bg-[#111111]">
+    <main className="min-h-screen bg-[#fafafa] dark:bg-[#111111] px-3 sm:px-4 md:px-6 lg:px-8 pt-24 sm:pt-28 md:pt-32 pb-12 sm:pb-16 md:pb-20">
       {/* ... existing hero section ... */}
 
       <motion.section
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ delay: 0.3 }}
-        className="max-w-4xl mx-auto px-6 py-20"
+        className="max-w-4xl mx-auto"
       >
-        <div className="space-y-16">
+        <div className="space-y-8 sm:space-y-12 md:space-y-16">
           {/* About Text */}
           <div className="prose dark:prose-invert">
-          <h3 className="text-2xl font-bold mb-6 text-[#1a1a1a] dark:text-white">
+          <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-[#1a1a1a] dark:text-white">
             About Me
-              <div className="h-0.5 w-20 bg-[#1a1a1a] dark:bg-white mt-2 rounded-full" />
+              <div className="h-0.5 w-12 sm:w-16 md:w-20 bg-[#1a1a1a] dark:bg-white mt-1.5 sm:mt-2 rounded-full" />
             </h3>
-            <div className="space-y-4 text-lg text-[#666666] dark:text-[#888888]">
+            <div className="space-y-3 sm:space-y-4 text-sm sm:text-base md:text-lg text-[#666666] dark:text-[#888888]">
               <p>
                 Hi, I&apos;m Janvi Rajesh Hatwar, a frontend developer who loves building clean and user-friendly web applications. 
                 I mainly work with React.js, JavaScript, and modern web technologies, and I&apos;m always eager to learn new tools 
@@ -53,48 +53,49 @@ export default function Home() {
             </div>
           </div>
 
-          {/* Tech Stack with updated hover effects */}
-          <h3 className="text-2xl font-bold mb-6 text-[#1a1a1a] dark:text-white">
-            Technologies I Work With
-              <div className="h-0.5 w-20 bg-[#1a1a1a] dark:bg-white mt-2 rounded-full" />
+          {/* Tech Stack */}
+          <div>
+            <h3 className="text-xl sm:text-2xl font-bold mb-4 sm:mb-6 text-[#1a1a1a] dark:text-white">
+              Technologies I Work With
+              <div className="h-0.5 w-12 sm:w-16 md:w-20 bg-[#1a1a1a] dark:bg-white mt-1.5 sm:mt-2 rounded-full" />
             </h3>
 
-          <div className="grid grid-cols-3 md:grid-cols-4 lg:grid-cols-5 gap-8">
-        {technologies.map((tech, index) => (
-          <motion.div
-            key={tech.name}
-            initial={{ opacity: 0, y: 20 }}
-            animate={{ opacity: 1, y: 0 }}
-            transition={{ delay: index * 0.1 }}
-            className="group relative p-[2px] rounded-lg overflow-hidden"
-          >
-            {/* Animated border gradient */}
-            <div className="absolute inset-0 bg-gradient-to-r from-[#0066ff00] via-[#0066ff] to-[#0066ff00] 
-              opacity-0 group-hover:opacity-100
-              blur-md transition-opacity duration-300
-              animate-[border-animation_3s_ease_infinite]
-              bg-[length:200%_100%]" />
+            <div className="grid grid-cols-3 sm:grid-cols-4 md:grid-cols-5 lg:grid-cols-6 gap-2 sm:gap-4 md:gap-6">
+              {technologies.map((tech, index) => (
+                <motion.div
+                  key={tech.name}
+                  initial={{ opacity: 0, y: 20 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: index * 0.1 }}
+                  className="group relative p-[1px] rounded-md overflow-hidden"
+                >
+                  {/* Animated border gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-r from-[#0066ff00] via-[#0066ff] to-[#0066ff00] 
+                    opacity-0 group-hover:opacity-100
+                    blur-md transition-opacity duration-300
+                    animate-[border-animation_3s_ease_infinite]
+                    bg-[length:200%_100%]" />
 
-            {/* Content */}
-            <div className="relative flex flex-col items-center justify-center p-4 
-                          rounded-lg bg-white dark:bg-[#1a1a1a]
-                          h-full w-full
-                          transition-all duration-300">
-              <div className="text-3xl mb-3 text-[#333333] dark:text-[#888888] 
-                            group-hover:text-black dark:group-hover:text-white 
-                            transition-colors duration-300">
-                {tech.icon}
-              </div>
-              <span className="text-sm text-center text-[#666666] dark:text-[#888888]
-                             group-hover:text-black dark:group-hover:text-white 
-                             transition-colors duration-300">
-                {tech.name}
-              </span>
+                  {/* Content */}
+                  <div className="relative flex flex-col items-center justify-center p-2 sm:p-3 md:p-4 
+                    rounded-md bg-white dark:bg-[#1a1a1a]
+                    h-full w-full min-h-[60px] sm:min-h-[80px] md:min-h-[100px]
+                    transition-all duration-300">
+                    <div className="text-lg sm:text-xl md:text-2xl lg:text-3xl mb-1 sm:mb-2 text-[#333333] dark:text-[#888888] 
+                      group-hover:text-black dark:group-hover:text-white 
+                      transition-colors duration-300">
+                      {tech.icon}
+                    </div>
+                    <span className="text-[10px] sm:text-xs md:text-sm text-center text-[#666666] dark:text-[#888888]
+                      group-hover:text-black dark:group-hover:text-white 
+                      transition-colors duration-300">
+                      {tech.name}
+                    </span>
+                  </div>
+                </motion.div>
+              ))}
             </div>
-          </motion.div>
-        ))}
-      </div>
-
+          </div>
 
           {/* Stats with updated hover effects */}
           {/* <div className="grid grid-cols-2 md:grid-cols-4 gap-8">
