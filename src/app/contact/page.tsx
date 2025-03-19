@@ -168,17 +168,17 @@ export default function Contact() {
                   {[
                     {
                       icon: FiGithub,
-                      href: "https://github.com/yourusername",
+                      href: "https://github.com/janvihatwar",
                       label: "GitHub",
                     },
                     {
                       icon: FiLinkedin,
-                      href: "https://linkedin.com/in/yourusername",
+                      href: "https://www.linkedin.com/in/janvihatwar/",
                       label: "LinkedIn",
                     },
                     {
                       icon: FiTwitter,
-                      href: "https://twitter.com/yourusername",
+                      href: "https://x.com/JanviHatwar14",
                       label: "Twitter",
                     },
                   ].map((social) => (

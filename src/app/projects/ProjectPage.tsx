@@ -7,7 +7,7 @@ const projects = [
     id: 1,
     title: "Analyze Your Text",
     description: `Tech Stack: React, HTML, CSS, JavaScript\n\nAnalyze Your Text is a web application designed for efficient text processing. It allows users to analyze, transform, encode, decode, and bookmark text seamlessly. With a clean and responsive UI, the tool enhances readability and simplifies text-related tasks.`,
-    link: "https://janvihatwar.github.io/analyzeYourTextHere/",
+    link: "https://janvihatwar.github.io/AnalyzeYourText/",
   },
   {
     id: 2,

@@ -4,7 +4,7 @@ import Image from 'next/image'
 export default function Navbar() {
   return (
     <nav className="fixed w-full bg-transparent backdrop-blur-sm z-50">
-      <div className="container mx-auto flex justify-between items-center px-3 sm:px-2 md:px-6 lg:px-8 py-2 sm:py-3">
+      <div className="container mx-auto flex justify-between items-center px-3 sm:px-4 md:px-6 lg:px-8 py-2 sm:py-3">
         <Link href="/" className="flex items-center space-x-2">
           {/* Add your logo - replace '/logo.png' with your actual logo path */}
           <Image 

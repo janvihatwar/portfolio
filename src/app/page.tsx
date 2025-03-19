@@ -32,7 +32,9 @@ export default function Home() {
             {/* Name & Description */}
             <div className="space-y-4 sm:space-y-6">
               <h1 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-bold leading-tight">
-                <span className="text-[#1a1a1a] dark:text-white">Hi, I&apos;m </span>
+                <span className="text-[#1a1a1a] dark:text-white">
+                  Hi, I&apos;m{" "}
+                </span>
                 <span className="relative inline-block">
                   <span
                     className="bg-gradient-to-r from-[#1a1a1a] to-[#666666]
@@ -117,68 +119,76 @@ export default function Home() {
           </motion.div>
 
           {/* Right Column - Creative Tagline */}
-          <motion.div
-            initial={{ opacity: 0, x: 20 }}
-            animate={{ opacity: 1, x: 0 }}
-            transition={{ delay: 0.4 }}
-            className="relative"
-          >
-            <div className="space-y-4 sm:space-y-6 text-right">
-              <motion.h2
-                className="text-2xl xs:text-3xl sm:text-4xl md:text-5xl lg:text-7xl font-light flex flex-wrap justify-end gap-2 sm:gap-4 lg:gap-6"
-                initial={{ opacity: 0, y: 20 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: 0.5 }}
-              >
-                <span
-                  className="relative inline-block group cursor-default 
-                   text-[#1a1a1a] dark:text-white"
-                >
-                  Coding
-                  <span
-                    className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
-                     bg-[#1a1a1a] dark:bg-white
-                     transform origin-left scale-x-0 group-hover:scale-x-100
-                     transition-transform duration-300"
-                  />
-                </span>
+          <motion.h2
+  className="
+    text-xl xs:text-2xl sm:text-3xl md:text-4xl lg:text-5xl 
+    xl:text-6xl 2xl:text-7xl 
+    font-light flex flex-col 
+    max-md:text-4xl  
+    lg:items-end max-lg:items-center 
+    gap-2 sm:gap-3 lg:gap-4 text-center
+  "
+  initial={{ opacity: 0, y: 20 }}
+  animate={{ opacity: 1, y: 0 }}
+  transition={{ delay: 0.5 }}
+>
+  {/* Line 1: "Coding where" */}
+  <div>
+    <span
+      className="relative inline-block group cursor-default 
+       text-[#1a1a1a] dark:text-white"
+    >
+      Coding
+      <span
+        className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
+         bg-[#1a1a1a] dark:bg-white
+         transform origin-left scale-x-0 group-hover:scale-x-100
+         transition-transform duration-300"
+      />
+    </span>
 
-                <span className="text-[#666666] dark:text-[#888888]">
-                  where
-                </span>
+    <span className="text-[#666666] dark:text-[#888888] ml-1">
+      where
+    </span>
+  </div>
 
-                <span
-                  className="relative inline-block group cursor-default
-                   text-[#1a1a1a] dark:text-white"
-                >
-                  Logic
-                  <span
-                    className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
-                     bg-[#1a1a1a] dark:bg-white
-                     transform origin-left scale-x-0 group-hover:scale-x-100
-                     transition-transform duration-300"
-                  />
-                </span>
+  {/* Line 2: "Logic meets" */}
+  <div>
+    <span
+      className="relative inline-block group cursor-default
+       text-[#1a1a1a] dark:text-white"
+    >
+      Logic
+      <span
+        className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
+         bg-[#1a1a1a] dark:bg-white
+         transform origin-left scale-x-0 group-hover:scale-x-100
+         transition-transform duration-300"
+      />
+    </span>
 
-                <span className="text-[#666666] dark:text-[#888888]">
-                  meets
-                </span>
+    <span className="text-[#666666] dark:text-[#888888] ml-1">
+      meets
+    </span>
+  </div>
 
-                <span
-                  className="relative inline-block group cursor-default
-                   text-[#1a1a1a] dark:text-white"
-                >
-                  Creativity
-                  <span
-                    className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
-                     bg-[#1a1a1a] dark:bg-white
-                     transform origin-left scale-x-0 group-hover:scale-x-100
-                     transition-transform duration-300"
-                  />
-                </span>
-              </motion.h2>
-            </div>
-          </motion.div>
+  {/* Line 3: "Creativity" */}
+  <div>
+    <span
+      className="relative inline-block group cursor-default
+       text-[#1a1a1a] dark:text-white"
+    >
+      Creativity
+      <span
+        className="absolute bottom-0 left-0 w-full h-[1px] sm:h-[1.5px] md:h-[2px]
+         bg-[#1a1a1a] dark:bg-white
+         transform origin-left scale-x-0 group-hover:scale-x-100
+         transition-transform duration-300"
+      />
+    </span>
+  </div>
+</motion.h2>
+
         </div>
       </motion.section>
     </main>
