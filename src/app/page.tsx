@@ -100,7 +100,7 @@ export default function Home() {
                   </Link>
 
                   <Link
-                    href="/Resume_JanviHatwar.pdf"
+                    href="/Janvi_hatwar_resume.pdf"
                     target="_blank"
                     rel="noopener noreferrer"
                     className="relative inline-flex items-center gap-1.5 sm:gap-2
